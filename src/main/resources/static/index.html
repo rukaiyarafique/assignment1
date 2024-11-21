@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Health Tracker App</title>
+  <script src="https://unpkg.com/vue@3.0.2"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous" />
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+    integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous" />
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1>Health Tracker</h1>
+  <span class="row" id="addUser">
+    Name: <input v-model="name" /> Email:
+    <input v-model="email" />
+    <button @click="addUser">Add new users</button>
+  </span>
+  <div class="row"><br /></div>
+  <div class="row">
+    <div class="col-md-5">
+      <div id="users">
+        <button @click="showUsers">Display all users</button>
+        <div class="row"><br /></div>
+        <div class="row bg-primary">
+          <div class="col-md-1">Id</div>
+          <div class="col-md-3">Name</div>
+          <div class="col-md-5">Email</div>
+          <div class="col-md-3">Action</div>
+        </div>
+        <div class="row bg-success" v-for="user in users" :key="user.id">
+          <div class="col-md-1">{{user.id}}</div>
+          <div class="col-md-3">{{user.name}}</div>
+          <div class="col-md-5">{{user.email}}</div>
+          <div class="col-md-3">
+            <button @click="viewUser(`${user.id}`)">View</button>
+            <button @click="deleteUser(`${user.id}`)">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1">
+      <br />
+    </div>
+    <div class="col-md-6" id="trackers" >
+      <div class="row bg-primary" v-show="showTrackerApp"><b>User Id: {{userId}}</b></div>
+      <div class="row"><br /></div>
+      <div class="row" v-show="showTrackerApp">
+        Calories: <input v-model="calories" /> Walking:
+        <input v-model="walkHours" /> Drinking:
+        <input v-model="drinking" />
+        <button @click="addTracker()">Add tracking</button> 
+      </div>
+      <div class="row"><br /></div>
+      <div class="row" v-show="trackers.length === 0">
+        <span v-show="showTrackerApp">No Trackers for user id {{userId}}. Please add.</span>
+      </div>
+      <div class="row" v-show="trackers.length !== 0">
+        <div class="row bg-danger">
+          <!-- <div class="col-md-1">Id</div> -->
+          <div class="col-md-3">Calories</div>
+          <div class="col-md-3">Walking</div>
+          <div class="col-md-3">Drinking</div>
+          <div class="col-md-2">Action</div>
+        </div>
+        <div class="row bg-success" v-for="track in trackers" :key="track.id">
+          <!-- <div class="col-md-1">{{track.id}}</div> -->
+          <div class="col-md-3">{{track.calories}} K.Cal</div>
+          <div class="col-md-3">{{track.walkHours}} KM</div>
+          <div class="col-md-3">{{track.drinking}} L</div>
+          <div class="col-md-3">
+            <button @click="deleteTracker(`${track.id}`)">Delete</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="tracking-app.js"></script>
+</body>
+
+</html>
