@@ -4,40 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c38515a-b238-404a-9538-d94f3f19a8d9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f7aeb482-13c7-4024-b111-8976b51c6d20" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
-  <component name="ProjectId" id="2pAu4Du1fHl5mjnD3CMRLezEo3S" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2pDWKmO3ULl4SFtyn7uNB9Q64ym" />
   <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Gradle.Build assignment1.executor": "Run",
+    "Application.assignment1.executor": "Run",
+    "Kotlin.MainKt.executor": "Run",
+    "Maven.assigtnment1 [clean,install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.DemoApplication-render.executor": "Run",
-    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Rukaiya Rafique/SETU/2024-2025/agile-workspace/assignment1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,72 +42,52 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication">
-    <configuration name="DemoApplication-render" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <envs>
-        <env name="DB_HOST" value="dpg-csvo3ha3esus73buur70-a.frankfurt-postgres.render.com" />
-        <env name="DB_NAME" value="tracker_tdcy" />
-        <env name="DB_PASSWORD" value="mMlwivesit4chQjl71t7d8GGM1KnTZAf" />
-        <env name="DB_PORT" value="5432" />
-        <env name="DB_USER" value="tracker" />
-      </envs>
-      <module name="assignment1.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anjum\Documents\projects\assigtnment1\src\main\resources\static" />
+      <recent name="C:\Users\anjum\Documents\projects\assigtnment1\src\main\kotlin\ie\setu" />
+      <recent name="C:\Users\anjum\Documents\projects\assigtnment1\src\main\kotlin\ie\setu\config" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="ie.setu.config.domain" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="assignment1" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ie.setu.AppKt" />
+      <module name="assigtnment1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <envs>
-        <env name="DB_PASSWORD" value="postgres" />
-        <env name="DB_HOST" value="localhost" />
-        <env name="DB_USER" value="postgres" />
-        <env name="DB_PORT" value="5000" />
-        <env name="DB_NAME" value="postgres" />
-      </envs>
-      <module name="assignment1.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Spring Boot.DemoApplication" />
-      <item itemvalue="Spring Boot.DemoApplication-render" />
-    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9c38515a-b238-404a-9538-d94f3f19a8d9" name="Changes" comment="" />
-      <created>1732221011538</created>
+      <changelist id="f7aeb482-13c7-4024-b111-8976b51c6d20" name="Changes" comment="" />
+      <created>1732301065248</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1732221011538</updated>
-      <workItem from="1732221015370" duration="2717000" />
+      <updated>1732301065248</updated>
+      <workItem from="1732301066221" duration="6288000" />
+      <workItem from="1732311861972" duration="5057000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
